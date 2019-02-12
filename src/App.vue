@@ -1,17 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <div id="app" class="col">
+    <h2>
+      Liste de courses
+    </h2>
+    <IngredientsContainer/>
+
+    <!-- <form class="form-inline">
+      <div class="form-group">
+        <div class="input-group">
+          <input type="text" class="form-control" v-model="newIngredient" id="new-item-field"       
+          placeholder="Produit">
+        </div>
+      </div>
+      <button @click.prevent="ajouter()" class="btn">Ajouter</button>
+    </form> -->
+
+    <!-- <div class="a-acheter">
+        {{ingredientsSelected}}
+    </div> -->
   </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import IngredientsContainer from './components/IngredientsContainer.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    IngredientsContainer,
   }
 }
 </script>
